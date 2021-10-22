@@ -18,13 +18,9 @@
     <section class="cabinet-section row">
       <div class="instructions col-md">
         <h1 class="black">AMPs Calculator.</h1>
-        <p><em>INSTRUCTIONS for Cabinet Signs:</em></p>
-        <ol>
-          <li>Determine length of cabinet.</li>
-          <li>Find total Modules.</li>
-          <li>Divide total modules by affiliated AMP number</li>
-        </ol>
+
         <form id="calculator" action="">
+          <h4 class="cab-sign-parameters">Cabinet Sign Parameters:</h4>
           <div class="length-box btn btn-danger">
             <label for="length-in-feet">Length in Feet:</label>
             <input
@@ -54,8 +50,19 @@
               Submit
             </button>
           </div>
+          <div class="instructions">
+            <p class="instructions-p">
+              <em>INSTRUCTIONS for Cabinet Signs:</em>
+            </p>
+            <ol>
+              <li>Determine length of cabinet.</li>
+              <li>Find total Modules.</li>
+              <li>Divide total modules by affiliated AMP number</li>
+            </ol>
+          </div>
         </form>
       </div>
+
       <div class="cab-result container col">
         <p id="output" class="result">0</p>
         <p class="amps">Amps Calculated</p>

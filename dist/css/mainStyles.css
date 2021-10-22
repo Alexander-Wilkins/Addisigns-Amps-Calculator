@@ -4,10 +4,28 @@
   border: 0;
 }
 
+#calculator {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: solid #8a869b 1px;
+  border-radius: 0.3125rem;
+  padding: 1rem;
+}
+
+#calculator .cab-sign-parameters {
+  color: #0074d9;
+}
+
 .instructions {
   color: gray;
   padding: 1.5rem;
   font-size: 0.8rem;
+}
+
+.instructions .instructions-p {
+  margin-bottom: 0.4rem;
 }
 
 .black {
@@ -34,6 +52,7 @@
 .length-box,
 .number-of-rows-box {
   font-weight: 600;
+  margin-bottom: 0.3125rem;
 }
 
 .length-box .length-in-feet-input,

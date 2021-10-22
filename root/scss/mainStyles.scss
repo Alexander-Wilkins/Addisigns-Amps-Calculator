@@ -1,0 +1,53 @@
+@import "variables";
+@import "mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.instructions {
+    color: gray;
+    padding: 1.5rem;
+    font-size: 0.8rem;
+}
+
+
+.black {
+    color: $black;
+}
+
+.cab-result {
+    padding: 50px 50px;
+    border: rgb(28, 14, 218) solid 1 px;
+
+    .result {
+        @include bolden();
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .amps {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.length-box,
+.number-of-rows-box {
+
+    font-weight: 600;
+
+    .length-in-feet-input,
+    .number-of-rows-input {
+        @include input-box();
+
+    }
+}
+
+.footer{
+    margin-top: 100px;
+    text-align: center;
+    color: rgba(128, 128, 128, 0.568);
+}

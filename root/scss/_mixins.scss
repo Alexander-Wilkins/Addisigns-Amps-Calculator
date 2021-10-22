@@ -1,0 +1,9 @@
+@mixin bolden {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@mixin input-box {
+    padding-left: 10px;
+    font-weight: bold;
+}

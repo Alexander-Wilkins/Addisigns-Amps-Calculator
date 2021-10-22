@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/dist/css/mainStyles.css" />
+    <title>AMPs Calculator</title>
+  </head>
+  <body>
+    <section class="cabinet-section row">
+      <div class="instructions col-md">
+        <h1 class="black">AMPs Calculator.</h1>
+        <p><em>INSTRUCTIONS for Cabinet Signs:</em></p>
+        <ol>
+          <li>Determine length of cabinet.</li>
+          <li>Find total Modules.</li>
+          <li>Divide total modules by affiliated AMP number</li>
+        </ol>
+        <form id="calculator" action="">
+          <div class="length-box btn btn-danger">
+            <label for="length-in-feet">Length in Feet:</label>
+            <input
+              type="number"
+              id="lengthInFeet"
+              class="length-in-feet-input"
+              name="input-in-feet"
+              min="1"
+              max="1000"
+            />
+          </div>
+
+          <div class="number-of-rows-box btn btn-primary">
+            <label for="number-of-rows">Number of rows in Cabinet:</label>
+            <input
+              type="number"
+              id="numberOfRows"
+              class="number-of-rows-input"
+              name="input-in-feet"
+              min="1"
+              max="1000"
+            />
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-outline-primary">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="cab-result container col">
+        <p id="output" class="result">0</p>
+        <p class="amps">Amps Calculated</p>
+      </div>
+    </section>
+
+    <div class="d-flex row bg-light p-5 rounded mt-3">
+      <div class="spec-ref col-sm-6">
+        <h3>Spec References:</h3>
+        <ul>
+          <li>LENGTH = 4 LED Per 1 ft.</li>
+          <li>1 power supply = 150 LED Modules.</li>
+          <li>150 Modules = 1 Power Supply.</li>
+          <li>1 power supply = 2 AMPS.</li>
+          <li>150 Modules = 2 AMPS.</li>
+          <li>75 Modules = 1 AMPS.</li>
+          <li>8 or more AMPS = 2 Circuits.</li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <h4><em>Examples:</em></h4>
+        <ul>
+          <li><em> i.e. 8' = 32 LEDs</em></li>
+          <li><em>4'x8' = 128 Modules = 1.7 AMPS</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <p><em>Credits: Christopher Carsey, Cierra Wilkins.</em></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/dist/"></script>
+    <script src="/root/js/mainFunctions.js"></script>
+  </body>
+</html>

@@ -19,7 +19,7 @@
       <div class="instructions col-md">
         <h1 class="black">AMPs Calculator.</h1>
 
-        <form id="calculator" action="">
+        <form id="calculator-cab" action="">
           <h4 class="cab-sign-parameters">Cabinet Sign Parameters:</h4>
           <div class="length-box btn btn-danger">
             <label for="length-in-feet">Length in Feet:</label>
@@ -34,7 +34,7 @@
           </div>
 
           <div class="number-of-rows-box btn btn-primary">
-            <label for="number-of-rows">Number of rows in Cabinet:</label>
+            <label for="number-of-rows">Number of Rows In Cabinet:</label>
             <input
               type="number"
               id="numberOfRows"
@@ -64,8 +64,53 @@
       </div>
 
       <div class="cab-result container col">
-        <p id="output" class="result">0</p>
-        <p class="amps">Amps Calculated</p>
+        <p id="output-cab" class="result">0</p>
+        <p class="amps">Cabinet Amps Calculated</p>
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="letter-section row">
+      <div class="instructions col-md">
+        <form id="calculator-letter" action="">
+          <h4 class="letter-sign-parameters">Channel Letter Parameters:</h4>
+
+          <div class="height-of-letter-box btn btn-danger">
+            <label>Letter Height in Inches:</label>
+            <input
+              type="number"
+              id="heightOfLetters"
+              class="height-of-letters-input"
+              name="input-in-inches"
+              min="1"
+              max="1000"
+            />
+          </div>
+
+          <div class="qty-of-letters-box btn btn-primary">
+            <label>QTY of Letters:</label>
+            <input
+              type="number"
+              id="qtyOfLetters"
+              class="qty-of-letters-input"
+              name="input-in-qty"
+              min="1"
+              max="1000"
+            />
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-outline-primary">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="cab-result container col">
+        <p id="output-letter" class="result">0</p>
+        <p class="amps">Letter Amps Calculated</p>
       </div>
     </section>
 

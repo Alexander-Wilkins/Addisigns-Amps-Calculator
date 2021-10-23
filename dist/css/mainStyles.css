@@ -4,7 +4,8 @@
   border: 0;
 }
 
-#calculator {
+#calculator-cab,
+#calculator-letter {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -14,8 +15,14 @@
   padding: 1rem;
 }
 
-#calculator .cab-sign-parameters {
+#calculator-cab .cab-sign-parameters,
+#calculator-letter .cab-sign-parameters {
   color: #0074d9;
+}
+
+#calculator-cab .letter-sign-parameters,
+#calculator-letter .letter-sign-parameters {
+  color: green;
 }
 
 .instructions {
@@ -50,15 +57,29 @@
 }
 
 .length-box,
-.number-of-rows-box {
+.number-of-rows-box,
+.height-of-letter-box,
+.qty-of-letters-box {
   font-weight: 600;
   margin-bottom: 0.3125rem;
 }
 
 .length-box .length-in-feet-input,
 .length-box .number-of-rows-input,
+.length-box .height-of-letters-input,
+.length-box .qty-of-letters-input,
 .number-of-rows-box .length-in-feet-input,
-.number-of-rows-box .number-of-rows-input {
+.number-of-rows-box .number-of-rows-input,
+.number-of-rows-box .height-of-letters-input,
+.number-of-rows-box .qty-of-letters-input,
+.height-of-letter-box .length-in-feet-input,
+.height-of-letter-box .number-of-rows-input,
+.height-of-letter-box .height-of-letters-input,
+.height-of-letter-box .qty-of-letters-input,
+.qty-of-letters-box .length-in-feet-input,
+.qty-of-letters-box .number-of-rows-input,
+.qty-of-letters-box .height-of-letters-input,
+.qty-of-letters-box .qty-of-letters-input {
   padding-left: 10px;
   font-weight: bold;
 }

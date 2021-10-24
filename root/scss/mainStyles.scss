@@ -7,10 +7,31 @@
     border: 0;
 }
 
+#calculator-cab,
+#calculator-letter {
+    flex-direction: column;
+    border: solid rgb(138, 134, 155) 1px;
+    border-radius: 0.3125rem;
+    padding: 1rem;
+    // background-color: rgba(0, 0, 0, 0.514);
+
+    .cab-sign-parameters {
+        color: $primary;
+    }
+
+    .letter-sign-parameters{
+        color: green;
+    }
+}
+
 .instructions {
     color: gray;
     padding: 1.5rem;
     font-size: 0.8rem;
+
+    .instructions-p {
+        margin-bottom: 0.4rem;
+    }
 }
 
 
@@ -35,18 +56,23 @@
 }
 
 .length-box,
-.number-of-rows-box {
+.number-of-rows-box,
+.height-of-letter-box,
+.qty-of-letters-box {
 
     font-weight: 600;
+    margin-bottom: 0.3125rem;
 
     .length-in-feet-input,
-    .number-of-rows-input {
+    .number-of-rows-input,
+    .height-of-letters-input,
+    .qty-of-letters-input {
         @include input-box();
 
     }
 }
 
-.footer{
+.footer {
     margin-top: 100px;
     text-align: center;
     color: rgba(128, 128, 128, 0.568);

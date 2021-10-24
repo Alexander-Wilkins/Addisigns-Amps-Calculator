@@ -19,9 +19,15 @@
         color: $primary;
     }
 
-    .letter-sign-parameters{
+    .letter-sign-parameters {
         color: green;
     }
+}
+
+.header-image {
+    display: block;
+    max-width: 100%;
+    margin: auto auto;
 }
 
 .instructions {

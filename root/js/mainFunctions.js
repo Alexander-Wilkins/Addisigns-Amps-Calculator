@@ -13,7 +13,7 @@ $("#calculator-cab").submit(function (event) {
 $("#calculator-letter").submit(function (event) {
   event.preventDefault();
   let heightOfLetters = $("#heightOfLetters").val();
-  let qtyOfLetters = $("#qtyOfLetters").val();
+  let qtyOfLetters = $("#qtyOfLetters").val().length;
   let totalModules = (heightOfLetters * qtyOfLetters * 3) / 4;
   let result = (Math.ceil(totalModules * 10) / 10).toFixed(1) / 75;
   $("#output-letter").text(result);

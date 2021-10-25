@@ -7,13 +7,21 @@
     border: 0;
 }
 
-#calculator-cab,
-#calculator-letter {
+section {
+    padding: 1rem;
+}
+
+.header-image {
+    display: block;
+    max-width: 100%;
+    margin: auto auto;
+}
+
+.box {
     flex-direction: column;
     border: solid rgb(138, 134, 155) 1px;
     border-radius: 0.3125rem;
     padding: 1rem;
-    // background-color: rgba(0, 0, 0, 0.514);
 
     .cab-sign-parameters {
         color: $primary;
@@ -24,29 +32,16 @@
     }
 }
 
-.header-image {
-    display: block;
-    max-width: 100%;
-    margin: auto auto;
+.output {
+    position: absolute;
+    
 }
-
-.instructions {
-    color: gray;
-    padding: 1.5rem;
-    font-size: 0.8rem;
-
-    .instructions-p {
-        margin-bottom: 0.4rem;
-    }
-}
-
 
 .black {
     color: $black;
 }
 
-.cab-result {
-    padding: 50px 50px;
+.output-result {
     border: rgb(28, 14, 218) solid 1 px;
 
     .result {
@@ -61,18 +56,11 @@
     }
 }
 
-.length-box,
-.number-of-rows-box,
-.height-of-letter-box,
-.qty-of-letters-box {
-
+.measure-box {
     font-weight: 600;
     margin-bottom: 0.3125rem;
 
-    .length-in-feet-input,
-    .number-of-rows-input,
-    .height-of-letters-input,
-    .qty-of-letters-input {
+    .input-box {
         @include input-box();
 
     }

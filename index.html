@@ -23,30 +23,30 @@
       />
     </div>
 
-    <section class="cabinet-section row">
-      <div class="instructions col-md">
-        <h1 class="black">AMPs Calculator.</h1>
+    <section class="row">
+      <div class="col-md">
+        <h1>AMPs Calculator</h1>
 
-        <form id="calculator-cab" action="">
+        <form class="box" id="calculator-cab" action="">
           <h4 class="cab-sign-parameters">Cabinet Sign Parameters:</h4>
-          <div class="length-box btn btn-danger">
+          <div class="measure-box btn btn-danger">
             <label for="length-in-feet">Length in Feet:</label>
             <input
               type="number"
               id="lengthInFeet"
-              class="length-in-feet-input"
+              class="input-box"
               name="input-in-feet"
               min="1"
               max="1000"
             />
           </div>
 
-          <div class="number-of-rows-box btn btn-primary">
+          <div class="measure-box btn btn-primary">
             <label for="number-of-rows">Cabinet Height in Feet:</label>
             <input
               type="number"
               id="numberOfRows"
-              class="number-of-rows-input"
+              class="input-box"
               name="input-in-feet"
               min="1"
               max="1000"
@@ -59,7 +59,7 @@
             </button>
           </div>
           <div class="instructions">
-            <p class="instructions-p">
+            <p>
               <em>INSTRUCTIONS for Cabinet Signs:</em>
             </p>
             <ol>
@@ -71,9 +71,11 @@
         </form>
       </div>
 
-      <div class="cab-result container col">
-        <p id="output-cab" class="result">0</p>
-        <p class="amps">Cabinet Amps Calculated</p>
+      <div class="output-result container col">
+        <div class="output">
+          <p id="output-cab" class="result">0</p>
+          <p class="amps">Cabinet Amps Calculated</p>
+        </div>
       </div>
     </section>
 
@@ -81,27 +83,27 @@
 
     <section class="letter-section row">
       <div class="instructions col-md">
-        <form id="calculator-letter" action="">
+        <form class="box" id="calculator-letter" action="">
           <h4 class="letter-sign-parameters">Channel Letter Parameters:</h4>
 
-          <div class="height-of-letter-box btn btn-danger">
+          <div class="measure-box btn btn-danger">
             <label>Letter Height in Inches:</label>
             <input
               type="number"
               id="heightOfLetters"
-              class="height-of-letters-input"
+              class="input-box"
               name="input-in-inches"
               min="1"
               max="1000"
             />
           </div>
 
-          <div class="qty-of-letters-box btn btn-primary">
+          <div class="measure-box btn btn-primary">
             <label>Type Out the Letters (no spaces):</label>
             <input
               type="text"
               id="qtyOfLetters"
-              class="qty-of-letters-input"
+              class="input-box"
               name="input-in-qty"
             />
           </div>
@@ -114,7 +116,7 @@
         </form>
       </div>
 
-      <div class="cab-result container col">
+      <div class="output-result container col">
         <p id="output-letter" class="result">0</p>
         <p class="amps">Letter Amps Calculated</p>
       </div>

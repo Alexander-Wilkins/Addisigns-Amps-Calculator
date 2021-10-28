@@ -32,10 +32,6 @@ section {
   color: green;
 }
 
-.output {
-  position: absolute;
-}
-
 .black {
   color: rgba(0, 0, 0, 0.788);
 }

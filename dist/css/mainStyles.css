@@ -32,8 +32,8 @@ section {
   color: green;
 }
 
-.output {
-  position: absolute;
+.instructions {
+  padding-top: 10px;
 }
 
 .black {
